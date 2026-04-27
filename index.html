@@ -349,7 +349,9 @@
   <a href="#tema5"><span class="num">5</span> Grafika & Obraz</a>
   <a href="#tema6"><span class="num">6</span> Booleova algebra & Hradlá</a>
   <a href="#tema7"><span class="num">7</span> Smerovanie</a>
-  <a href="#tema8"><span class="num">8</span> Matičná doska</a>
+  <a href="#tema8"><span class="num">8</span> Matičná doska & Procesor</a>
+  <a href="#tema9"><span class="num">9</span> Bezdrôtové siete</a>
+  <a href="#tema10"><span class="num">10</span> Napájanie & Ohmov zákon</a>
 </nav>
 
 <main>
@@ -985,7 +987,7 @@
       <div class="tema-number">5</div>
       <div class="tema-header-text">
         <h2>Grafika, obraz & Farebné modely</h2>
-        <p>Hardware a software pri prenose obrazu, grafická karta, zobrazovacie jednotky, streamy a monitory</p>
+        <p>Hardware a software pri prenose obrazu, grafická karta, kodek, RGB model</p>
       </div>
     </div>
 
@@ -1089,168 +1091,6 @@
           <p>Tlačiarne používajú <strong>CMYK</strong> (Cyan, Magenta, Yellow, Black) – subtraktívny model pre tlač na papier. RGB sa nedá priamo tlačiť, preto sa pri tlači konvertuje na CMYK.</p>
         </div>
       </div>
-         <!-- 2b -->
-    <div class="uloha-block" id="t5-2b">
-      <div class="uloha-label">📌 2b</div>
-      <h3>Porovnanie zobrazovacích jednotiek CRT, LCD a OLED</h3>
-      <div class="sustava-grid">
-        <div class="sustava-card">
-          <span class="s-badge s-dec">Staršia technológia</span>
-          <h4>CRT monitor</h4>
-          <p><strong>CRT</strong> (Cathode Ray Tube) využíva elektrónové delo a luminoforovú obrazovku. Obraz vzniká dopadom elektrónov na vnútornú stranu obrazovky.</p>
-          <p><strong>Výhody:</strong> veľmi dobré podanie pohybu, malé oneskorenie, verné farby.</p>
-          <p><strong>Nevýhody:</strong> veľké rozmery, vysoká hmotnosť, vysoká spotreba energie, blikanie obrazu, zastaraná technológia.</p>
-        </div>
-        <div class="sustava-card">
-          <span class="s-badge s-bin">Bežný štandard</span>
-          <h4>LCD monitor</h4>
-          <p><strong>LCD</strong> (Liquid Crystal Display) používa tekuté kryštály, ktoré regulujú prechod svetla z podsvietenia. Dnes je to najrozšírenejší typ monitorov.</p>
-          <p><strong>Výhody:</strong> nízka spotreba, tenké rozmery, nízka hmotnosť, ostrý obraz, dostupná cena.</p>
-          <p><strong>Nevýhody:</strong> slabšia čierna farba oproti OLED, horšie pozorovacie uhly pri niektorých paneloch, možné rozmazanie pri rýchlom pohybe.</p>
-        </div>
-        <div class="sustava-card">
-          <span class="s-badge s-hex">Moderná technológia</span>
-          <h4>OLED monitor</h4>
-          <p><strong>OLED</strong> (Organic Light Emitting Diode) používa organické diódy, kde každý pixel svieti samostatne. Nepotrebuje samostatné podsvietenie.</p>
-          <p><strong>Výhody:</strong> perfektná čierna, vysoký kontrast, veľmi rýchla odozva, výborné farby, široké pozorovacie uhly.</p>
-          <p><strong>Nevýhody:</strong> vyššia cena, riziko vypaľovania statického obrazu (burn-in), kratšia životnosť pri niektorých typoch použitia.</p>
-        </div>
-      </div>
-      <div class="card" style="margin-top:14px;">
-        <h4>Zhrnutie porovnania</h4>
-        <p><strong>CRT</strong> je dnes technologicky prekonané riešenie. <strong>LCD</strong> je najbežnejšia a ekonomicky najvýhodnejšia voľba pre školu, kanceláriu a domácnosť. <strong>OLED</strong> ponúka najvyššiu kvalitu obrazu, najmä pri filmoch a hrách, ale za vyššiu cenu.</p>
-      </div>
-    </div>
-
-    <!-- 2c -->
-    <div class="uloha-block" id="t5-2c">
-      <div class="uloha-label">📌 2c</div>
-      <h3>Video stream a zvukový stream</h3>
-      <div class="two-col">
-        <div class="card" style="margin-bottom:0;">
-          <h4>🎥 Video stream</h4>
-          <p><strong>Video stream</strong> je súvislý tok obrazových dát prenášaných alebo prehrávaných v reálnom čase. Obsahuje jednotlivé snímky videa usporiadané za sebou tak, aby vytvárali pohyblivý obraz.</p>
-          <p>Video stream sa používa pri online videách, videohovoroch, streamovacích službách a IPTV. Môže byť komprimovaný kodekmi ako <strong>H.264, H.265, VP9 alebo AV1</strong>.</p>
-        </div>
-        <div class="card" style="margin-bottom:0;">
-          <h4>🔊 Zvukový stream</h4>
-          <p><strong>Zvukový stream</strong> je súvislý tok zvukových dát prenášaných alebo prehrávaných v reálnom čase. Predstavuje digitálne kódovaný zvuk.</p>
-          <p>Používa sa pri hudobných službách, internetových rádiách, podcastoch, videách a online komunikácii. Bežné audio kodeky sú <strong>MP3, AAC, Opus alebo FLAC</strong>.</p>
-        </div>
-      </div>
-      <div class="card" style="margin-top:14px;">
-        <h4>Rozdiel v skratke</h4>
-        <p><strong>Video stream</strong> prenáša obrazové informácie, <strong>zvukový stream</strong> prenáša zvukové informácie. Pri videu na internete sa často prenášajú oba streamy naraz a prehrávač ich synchronizuje.</p>
-      </div>
-    </div>
-
-    <!-- 3a -->
-    <div class="uloha-block" id="t5-3a">
-      <div class="uloha-label">📌 3a</div>
-      <h3>Porovnanie digitálnych video kontajnerov AVI, MPEG, MP4, MOV, OGG, 3GP, DV</h3>
-      <div class="ip-table-wrap">
-        <table class="ip">
-          <thead>
-            <tr>
-              <th>Kontajner / formát</th>
-              <th>Charakteristika</th>
-              <th>Výhody</th>
-              <th>Nevýhody / použitie</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>AVI</strong></td>
-              <td>Starší kontajner od Microsoftu</td>
-              <td>Jednoduchý, široko podporovaný</td>
-              <td>Veľké súbory, slabšia podpora moderných funkcií</td>
-            </tr>
-            <tr>
-              <td><strong>MPEG</strong></td>
-              <td>Rodina formátov pre video kompresiu</td>
-              <td>Rozšírený štandard, vhodný pre video distribúciu</td>
-              <td>Staršie verzie majú nižšiu efektivitu kompresie</td>
-            </tr>
-            <tr>
-              <td><strong>MP4</strong></td>
-              <td>Moderný univerzálny kontajner</td>
-              <td>Malé súbory, vysoká kompatibilita, vhodný pre internet</td>
-              <td>Menej flexibilný ako MKV, ale veľmi univerzálny</td>
-            </tr>
-            <tr>
-              <td><strong>MOV</strong></td>
-              <td>Kontajner od Apple (QuickTime)</td>
-              <td>Vysoká kvalita, vhodný na strih videa</td>
-              <td>Väčšie súbory, častejšie v Apple prostredí</td>
-            </tr>
-            <tr>
-              <td><strong>OGG</strong></td>
-              <td>Otvorený multimediálny kontajner</td>
-              <td>Bez licenčných poplatkov, vhodný pre open-source</td>
-              <td>Menej rozšírený pri videu než MP4</td>
-            </tr>
-            <tr>
-              <td><strong>3GP</strong></td>
-              <td>Formát pre mobilné zariadenia</td>
-              <td>Malé súbory, vhodné pre slabšie zariadenia</td>
-              <td>Nízka kvalita obrazu, dnes zastaraný</td>
-            </tr>
-            <tr>
-              <td><strong>DV</strong></td>
-              <td>Formát digitálnych kamier</td>
-              <td>Vysoká kvalita pri zázname, vhodný na spracovanie</td>
-              <td>Veľmi veľké súbory, dnes menej používaný</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="card" style="margin-top:14px;">
-        <h4>Záver</h4>
-        <p>Na bežné prehrávanie a internet je najvhodnejší <strong>MP4</strong>. Na profesionálnejšie spracovanie sa často používa <strong>MOV</strong> alebo starší <strong>DV</strong>. <strong>AVI</strong> a <strong>3GP</strong> sú dnes skôr staršie formáty, zatiaľ čo <strong>OGG</strong> je otvorené riešenie s menším rozšírením.</p>
-      </div>
-    </div>
-
-    <!-- 3b -->
-    <div class="uloha-block" id="t5-3b">
-      <div class="uloha-label">📌 3b</div>
-      <h3>Na aké parametre monitora by som bral najväčší ohľad pri nákupe</h3>
-      <div class="components-grid">
-        <div class="comp-card"><div class="comp-icon icon-active">📏</div><div><div class="name">Veľkosť uhlopriečky</div><div class="desc">Podľa vzdialenosti od očí a typu práce – bežne 24" až 27"</div></div></div>
-        <div class="comp-card"><div class="comp-icon icon-active">🖼️</div><div><div class="name">Rozlíšenie</div><div class="desc">Full HD, QHD alebo 4K – vyššie rozlíšenie znamená jemnejší a ostrejší obraz</div></div></div>
-        <div class="comp-card"><div class="comp-icon icon-active">🎨</div><div><div class="name">Typ panela</div><div class="desc">IPS pre farby a uhly, VA pre kontrast, OLED pre špičkový obraz</div></div></div>
-        <div class="comp-card"><div class="comp-icon icon-active">⚡</div><div><div class="name">Obnovovacia frekvencia</div><div class="desc">60 Hz pre kanceláriu, 120/144 Hz a viac pre hry a plynulosť</div></div></div>
-        <div class="comp-card"><div class="comp-icon icon-active">⏱️</div><div><div class="name">Odozva</div><div class="desc">Dôležitá hlavne pri hrách – nižšia odozva znamená menej rozmazania</div></div></div>
-        <div class="comp-card"><div class="comp-icon icon-active">💡</div><div><div class="name">Jas a kontrast</div><div class="desc">Dôležité pre pohodlné používanie v rôznych svetelných podmienkach</div></div></div>
-        <div class="comp-card"><div class="comp-icon icon-active">🔌</div><div><div class="name">Konektivita</div><div class="desc">HDMI, DisplayPort, USB-C podľa zariadení, ktoré budú pripojené</div></div></div>
-        <div class="comp-card"><div class="comp-icon icon-active">🪑</div><div><div class="name">Ergonómia</div><div class="desc">Výškové nastavenie, náklon, pivot a ochrana zraku sú veľmi dôležité</div></div></div>
-      </div>
-      <div class="card" style="margin-top:14px;">
-        <h4>Zdôvodnenie</h4>
-        <p>Pri kúpe monitora by som sa najviac zameral na <strong>rozlíšenie, typ panela, veľkosť obrazovky, obnovovaciu frekvenciu a ergonómiu</strong>. Tieto parametre najviac ovplyvňujú kvalitu obrazu, pohodlie pri práci a celkovú spokojnosť pri dlhodobom používaní.</p>
-      </div>
-    </div>
-
-    <!-- 3c -->
-    <div class="uloha-block" id="t5-3c">
-      <div class="uloha-label">📌 3c</div>
-      <h3>Zhodnotenie monitorov z ergonomického a ekonomického hľadiska</h3>
-      <div class="two-col">
-        <div class="card" style="margin-bottom:0;">
-          <h4>🪑 Ergonomické hľadisko</h4>
-          <p>Monitor by mal mať vhodnú uhlopriečku, ostrý obraz a možnosť nastavenia výšky a sklonu. Dôležité sú aj technológie na ochranu zraku, napríklad <strong>flicker-free</strong> a <strong>low blue light</strong>.</p>
-          <p>Ergonomicky nevhodný monitor môže spôsobovať únavu očí, bolesti krku, hlavy a chrbta. Preto je dôležité správne umiestnenie monitora vo výške očí a v primeranej vzdialenosti.</p>
-        </div>
-        <div class="card" style="margin-bottom:0;">
-          <h4>💶 Ekonomické hľadisko</h4>
-          <p>Z ekonomického pohľadu je potrebné hodnotiť pomer <strong>cena / výkon / životnosť / spotreba energie</strong>. LCD monitory sú najčastejšie najvýhodnejšie – majú prijateľnú cenu a nízku spotrebu.</p>
-          <p>OLED monitory poskytujú najlepšiu kvalitu obrazu, ale sú drahšie. Pri kúpe treba zvážiť, či používateľ ich výhody reálne využije. Pre kanceláriu a školu je zvyčajne najrozumnejšia voľba kvalitný LCD monitor s IPS panelom.</p>
-        </div>
-      </div>
-      <div class="card" style="margin-top:14px;">
-        <h4>Celkové zhodnotenie</h4>
-        <p>Najlepší monitor nie je vždy najdrahší. Z ergonomického hľadiska má byť pohodlný na dlhú prácu a šetrný k zraku. Z ekonomického hľadiska má ponúknuť dobrú kvalitu obrazu, primeranú spotrebu a rozumnú cenu. Pre väčšinu používateľov je najlepším kompromisom <strong>LCD IPS monitor</strong> so slušným rozlíšením a ergonomickým stojanom.</p>
-      </div>
-    </div>
       <div class="card" style="margin-top:14px;">
         <h4>Vizuálna ukážka miešania RGB farieb</h4>
         <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; align-items:center;">
@@ -1288,9 +1128,132 @@
       </div>
     </div>
 
+    <!-- 2b -->
+    <div class="uloha-block" id="t5-2b">
+      <div class="uloha-label">📌 2b</div>
+      <h3>Porovnanie zobrazovacích jednotiek CRT, LCD a OLED</h3>
+      <div class="sustava-grid">
+        <div class="sustava-card">
+          <span class="s-badge s-hex">Staršia technológia</span>
+          <h4>CRT monitor</h4>
+          <p><strong>CRT</strong> (Cathode Ray Tube) využíva elektrónové delo a luminoforovú obrazovku. Obraz vzniká dopadom elektrónov na vnútornú stranu obrazovky.</p>
+          <p><strong>Výhody:</strong> veľmi dobré podanie pohybu, malé oneskorenie, verné farby.</p>
+          <p><strong>Nevýhody:</strong> veľké rozmery, vysoká hmotnosť, vysoká spotreba energie, blikanie obrazu, zastaraná technológia.</p>
+        </div>
+        <div class="sustava-card">
+          <span class="s-badge s-bin">Bežný štandard</span>
+          <h4>LCD monitor</h4>
+          <p><strong>LCD</strong> (Liquid Crystal Display) používa tekuté kryštály, ktoré regulujú prechod svetla z podsvietenia. Dnes je to najrozšírenejší typ monitorov.</p>
+          <p><strong>Výhody:</strong> nízka spotreba, tenké rozmery, nízka hmotnosť, ostrý obraz, dostupná cena.</p>
+          <p><strong>Nevýhody:</strong> slabšia čierna farba oproti OLED, horšie pozorovacie uhly pri niektorých paneloch.</p>
+        </div>
+        <div class="sustava-card">
+          <span class="s-badge s-dec">Moderná technológia</span>
+          <h4>OLED monitor</h4>
+          <p><strong>OLED</strong> (Organic Light Emitting Diode) používa organické diódy, kde každý pixel svieti samostatne. Nepotrebuje samostatné podsvietenie.</p>
+          <p><strong>Výhody:</strong> perfektná čierna, vysoký kontrast, veľmi rýchla odozva, výborné farby, široké pozorovacie uhly.</p>
+          <p><strong>Nevýhody:</strong> vyššia cena, riziko vypaľovania statického obrazu (burn-in), kratšia životnosť.</p>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px;">
+        <h4>Zhrnutie porovnania</h4>
+        <p><strong>CRT</strong> je dnes technologicky prekonané riešenie. <strong>LCD</strong> je najbežnejšia a ekonomicky najvýhodnejšia voľba pre školu, kanceláriu a domácnosť. <strong>OLED</strong> ponúka najvyššiu kvalitu obrazu, najmä pri filmoch a hrách, ale za vyššiu cenu.</p>
+      </div>
+    </div>
+
+    <!-- 2c -->
+    <div class="uloha-block" id="t5-2c">
+      <div class="uloha-label">📌 2c</div>
+      <h3>Video stream a zvukový stream</h3>
+      <div class="two-col">
+        <div class="card" style="margin-bottom:0;">
+          <h4>🎥 Video stream</h4>
+          <p><strong>Video stream</strong> je súvislý tok obrazových dát prenášaných alebo prehrávaných v reálnom čase. Obsahuje jednotlivé snímky videa usporiadané za sebou tak, aby vytvárali pohyblivý obraz.</p>
+          <p>Video stream sa používa pri online videách, videohovoroch, streamovacích službách a IPTV. Môže byť komprimovaný kodekmi ako <strong>H.264, H.265, VP9 alebo AV1</strong>.</p>
+        </div>
+        <div class="card" style="margin-bottom:0;">
+          <h4>🔊 Zvukový stream</h4>
+          <p><strong>Zvukový stream</strong> je súvislý tok zvukových dát prenášaných alebo prehrávaných v reálnom čase. Predstavuje digitálne kódovaný zvuk.</p>
+          <p>Používa sa pri hudobných službách, internetových rádiách, podcastoch, videách a online komunikácii. Bežné audio kodeky sú <strong>MP3, AAC, Opus alebo FLAC</strong>.</p>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px;">
+        <h4>Rozdiel v skratke</h4>
+        <p><strong>Video stream</strong> prenáša obrazové informácie, <strong>zvukový stream</strong> prenáša zvukové informácie. Pri videu na internete sa často prenášajú oba streamy naraz a prehrávač ich synchronizuje pomocou <strong>kontajnera</strong> (napr. MP4, MKV).</p>
+      </div>
+    </div>
+
+    <!-- 3a -->
+    <div class="uloha-block" id="t5-3a">
+      <div class="uloha-label">📌 3a</div>
+      <h3>Porovnanie digitálnych video kontajnerov AVI, MPEG, MP4, MOV, OGG, 3GP, DV</h3>
+      <div class="ip-table-wrap">
+        <table class="ip">
+          <thead>
+            <tr><th>Kontajner</th><th>Charakteristika</th><th>Výhody</th><th>Nevýhody / použitie</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>AVI</strong></td><td>Starší kontajner od Microsoftu</td><td>Jednoduchý, široko podporovaný</td><td>Veľké súbory, slabšia podpora moderných funkcií</td></tr>
+            <tr><td><strong>MPEG</strong></td><td>Rodina formátov pre video kompresiu</td><td>Rozšírený štandard, vhodný pre video distribúciu</td><td>Staršie verzie majú nižšiu efektivitu kompresie</td></tr>
+            <tr><td><strong>MP4</strong></td><td>Moderný univerzálny kontajner</td><td>Malé súbory, vysoká kompatibilita, vhodný pre internet</td><td>Menej flexibilný ako MKV, ale veľmi univerzálny</td></tr>
+            <tr><td><strong>MOV</strong></td><td>Kontajner od Apple (QuickTime)</td><td>Vysoká kvalita, vhodný na strih videa</td><td>Väčšie súbory, častejšie v Apple prostredí</td></tr>
+            <tr><td><strong>OGG</strong></td><td>Otvorený multimediálny kontajner</td><td>Bez licenčných poplatkov, vhodný pre open-source</td><td>Menej rozšírený pri videu než MP4</td></tr>
+            <tr><td><strong>3GP</strong></td><td>Formát pre mobilné zariadenia</td><td>Malé súbory, vhodné pre slabšie zariadenia</td><td>Nízka kvalita obrazu, dnes zastaraný</td></tr>
+            <tr><td><strong>DV</strong></td><td>Formát digitálnych kamier</td><td>Vysoká kvalita pri zázname, vhodný na spracovanie</td><td>Veľmi veľké súbory, dnes menej používaný</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card" style="margin-top:14px;">
+        <h4>Záver</h4>
+        <p>Na bežné prehrávanie a internet je najvhodnejší <strong>MP4</strong>. Na profesionálnejšie spracovanie sa často používa <strong>MOV</strong> alebo starší <strong>DV</strong>. <strong>AVI</strong> a <strong>3GP</strong> sú dnes skôr staršie formáty, zatiaľ čo <strong>OGG</strong> je otvorené riešenie s menším rozšírením.</p>
+      </div>
+    </div>
+
+    <!-- 3b -->
+    <div class="uloha-block" id="t5-3b">
+      <div class="uloha-label">📌 3b</div>
+      <h3>Na aké parametre monitora by som bral najväčší ohľad pri nákupe</h3>
+      <div class="components-grid">
+        <div class="comp-card"><div class="comp-icon icon-active">📏</div><div><div class="name">Veľkosť uhlopriečky</div><div class="desc">Podľa vzdialenosti od očí a typu práce – bežne 24" až 27"</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">🖼️</div><div><div class="name">Rozlíšenie</div><div class="desc">Full HD, QHD alebo 4K – vyššie rozlíšenie znamená jemnejší a ostrejší obraz</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">🎨</div><div><div class="name">Typ panela</div><div class="desc">IPS pre farby a uhly, VA pre kontrast, OLED pre špičkový obraz</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">⚡</div><div><div class="name">Obnovovacia frekvencia</div><div class="desc">60 Hz pre kanceláriu, 120/144 Hz a viac pre hry a plynulosť</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">⏱️</div><div><div class="name">Odozva</div><div class="desc">Dôležitá hlavne pri hrách – nižšia odozva znamená menej rozmazania</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">💡</div><div><div class="name">Jas a kontrast</div><div class="desc">Dôležité pre pohodlné používanie v rôznych svetelných podmienkach</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">🔌</div><div><div class="name">Konektivita</div><div class="desc">HDMI, DisplayPort, USB-C podľa zariadení, ktoré budú pripojené</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">🪑</div><div><div class="name">Ergonómia stojana</div><div class="desc">Výškové nastavenie, náklon, pivot a ochrana zraku sú veľmi dôležité</div></div></div>
+      </div>
+      <div class="card" style="margin-top:14px;">
+        <h4>Zdôvodnenie</h4>
+        <p>Pri kúpe monitora by som sa najviac zameral na <strong>rozlíšenie, typ panela, veľkosť obrazovky, obnovovaciu frekvenciu a ergonómiu</strong>. Tieto parametre najviac ovplyvňujú kvalitu obrazu, pohodlie pri práci a celkovú spokojnosť pri dlhodobom používaní.</p>
+      </div>
+    </div>
+
+    <!-- 3c -->
+    <div class="uloha-block" id="t5-3c">
+      <div class="uloha-label">📌 3c</div>
+      <h3>Zhodnotenie monitorov z ergonomického a ekonomického hľadiska</h3>
+      <div class="two-col">
+        <div class="card" style="margin-bottom:0;">
+          <h4>🪑 Ergonomické hľadisko</h4>
+          <p>Monitor by mal mať vhodnú uhlopriečku, ostrý obraz a možnosť nastavenia výšky a sklonu. Dôležité sú aj technológie na ochranu zraku – <strong>flicker-free</strong> (bez blikania) a <strong>low blue light</strong> (obmedzenie modrého svetla).</p>
+          <p>Ergonomicky nevhodný monitor môže spôsobovať únavu očí, bolesti krku, hlavy a chrbta. Dôležité je správne umiestnenie monitora vo výške očí a v primeranej vzdialenosti (50–70 cm).</p>
+        </div>
+        <div class="card" style="margin-bottom:0;">
+          <h4>💶 Ekonomické hľadisko</h4>
+          <p>Z ekonomického pohľadu je potrebné hodnotiť pomer <strong>cena / výkon / životnosť / spotreba energie</strong>. LCD monitory sú najčastejšie najvýhodnejšie – majú prijateľnú cenu a nízku spotrebu.</p>
+          <p>OLED monitory poskytujú najlepšiu kvalitu obrazu, ale sú drahšie. Pri kúpe treba zvážiť, či používateľ ich výhody reálne využije. Pre kanceláriu a školu je zvyčajne najrozumnejšia voľba kvalitný LCD monitor s IPS panelom.</p>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px;">
+        <h4>Celkové zhodnotenie</h4>
+        <p>Najlepší monitor nie je vždy najdrahší. Z ergonomického hľadiska má byť pohodlný na dlhú prácu a šetrný k zraku. Z ekonomického hľadiska má ponúknuť dobrú kvalitu obrazu, primeranú spotrebu a rozumnú cenu. Pre väčšinu používateľov je najlepším kompromisom <strong>LCD IPS monitor</strong> so slušným rozlíšením a ergonomickým stojanom.</p>
+      </div>
+    </div>
+
   </div>
 
-  <!-- ===================== TÉMA 22 ===================== -->
+  <!-- ===================== TÉMA 6 ===================== -->
   <div class="tema-block" id="tema6">
     <div class="tema-header">
       <div class="tema-number">6</div>
@@ -2119,11 +2082,459 @@
 
   </div>
 
+  <!-- ===================== TÉMA 9 ===================== -->
+  <div class="tema-block" id="tema9">
+    <div class="tema-header">
+      <div class="tema-number">9</div>
+      <div class="tema-header-text">
+        <h2>Bezdrôtové siete WLAN</h2>
+        <p>Technológie, štandardy IEEE 802.11, zabezpečenie, CSMA/CA, topológie</p>
+      </div>
+    </div>
+
+    <!-- 1a -->
+    <div class="uloha-block" id="t9-1a">
+      <div class="uloha-label">📌 1a</div>
+      <h3>Bezdrôtové siete WLAN</h3>
+      <div class="definition-box">
+        <strong>WLAN</strong> (Wireless Local Area Network) je lokálna počítačová sieť, ktorá využíva na prenos dát <em>rádiové vlny</em> namiesto fyzických káblov. Umožňuje zariadeniam komunikovať bez nutnosti káblového pripojenia v dosahu bezdrôtového signálu.
+      </div>
+      <div class="card">
+        <h4>Základné charakteristiky WLAN</h4>
+        <p>WLAN pracuje na frekvenciách <strong>2,4 GHz</strong> a <strong>5 GHz</strong> (novšie siete aj 6 GHz). Frekvenčné pásmo 2,4 GHz má väčší dosah, ale je viac rušené inými zariadeniami. Pásmo 5 GHz je rýchlejšie, no s menším dosahom.</p>
+        <p>Maximálny dosah závisí od prostredia – vo voľnom priestore až 100–300 m, v budovách typicky 20–50 m. Rýchlosť závisí od použitého štandardu – od 11 Mbps (802.11b) až po 9,6 Gbps (WiFi 6).</p>
+      </div>
+      <div class="two-col">
+        <div class="card" style="margin-bottom:0;">
+          <h4>✅ Výhody WLAN</h4>
+          <p>Mobilita – zariadenie sa môže pohybovať v dosahu siete. Jednoduchá inštalácia bez kabeláže. Vhodné pre prenosné zariadenia (notebooky, smartfóny, tablety). Nízke náklady na rozširovanie siete.</p>
+        </div>
+        <div class="card" style="margin-bottom:0;">
+          <h4>⚠️ Nevýhody WLAN</h4>
+          <p>Nižšia rýchlosť a spoľahlivosť oproti káblovej sieti. Rušenie od iných zariadení (mikrovlnky, Bluetooth). Menšia bezpečnosť – signál je dostupný aj mimo budovy. Väčšia latencia.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1b -->
+    <div class="uloha-block" id="t9-1b">
+      <div class="uloha-label">📌 1b</div>
+      <h3>Základné technológie bezdrôtových sietí</h3>
+      <div class="components-grid">
+        <div class="comp-card"><div class="comp-icon icon-active">📡</div><div><div class="name">WiFi (IEEE 802.11)</div><div class="desc">Najrozšírenejšia technológia pre WLAN – používa frekvencie 2,4 GHz, 5 GHz a 6 GHz</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">🔵</div><div><div class="name">Bluetooth</div><div class="desc">Krátky dosah (do 100 m), nízka spotreba – prepojenie periférií (slúchadlá, myš, klávesnica)</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">📶</div><div><div class="name">LTE / 5G</div><div class="desc">Mobilné siete – pokrytie veľkých oblastí, vysoké rýchlosti, používa licencované frekvencie</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">🌿</div><div><div class="name">ZigBee / Z-Wave</div><div class="desc">Nízka spotreba, krátky dosah – IoT zariadenia, inteligentné domy, senzory</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">🛰️</div><div><div class="name">WiMAX</div><div class="desc">Dlhý dosah (až 50 km) – bezdrôtový internet pre mestá a vzdialené oblasti</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">💡</div><div><div class="name">Li-Fi</div><div class="desc">Prenos dát cez svetlo (LED) – veľmi vysoká rýchlosť, funguje len v priamej viditeľnosti</div></div></div>
+      </div>
+    </div>
+
+    <!-- 1c -->
+    <div class="uloha-block" id="t9-1c">
+      <div class="uloha-label">📌 1c</div>
+      <h3>Technické prostriedky bezdrôtových sietí</h3>
+      <div class="two-col">
+        <div class="card" style="margin-bottom:0;">
+          <h4>📡 Antény</h4>
+          <p>Anténa je zariadenie, ktoré vyžaruje alebo prijíma rádiové vlny. Určuje dosah a smer bezdrôtového signálu.</p>
+          <p><strong>Všesmerová (omnidirectional)</strong> – vyžaruje signál rovnomerne do všetkých smerov. Vhodná pre bežné AP v miestnostiach.</p>
+          <p><strong>Smerová (directional)</strong> – sústreďuje signál do jedného smeru, väčší dosah. Používa sa pre spojenie medzi budovami (napr. Yagi, parabolická anténa).</p>
+          <p><strong>Zisk antény</strong> – udáva sa v dBi, vyšší zisk = silnejší signál v danom smere.</p>
+        </div>
+        <div class="card" style="margin-bottom:0;">
+          <h4>🔌 Prístupový bod (AP – Access Point)</h4>
+          <p>AP je zariadenie, ktoré vytvára bezdrôtovú sieť a prepája bezdrôtové zariadenia s káblovou sieťou (LAN/internet).</p>
+          <p><strong>Funkcie AP:</strong> Vysiela SSID (názov siete), riadi prístup zariadení, zabezpečuje šifrovanie (WPA2/WPA3), prideľuje IP adresy (DHCP).</p>
+          <p><strong>Typy AP:</strong> Samostatný AP (len bezdrôtová časť), bezdrôtový router (AP + router + switch v jednom), mesh AP (sieť viacerých AP pre väčšie pokrytie).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2a -->
+    <div class="uloha-block" id="t9-2a">
+      <div class="uloha-label">📌 2a</div>
+      <h3>Štandardy IEEE 802.11</h3>
+      <div class="ip-table-wrap">
+        <table class="ip">
+          <thead>
+            <tr><th>Štandard</th><th>Názov</th><th>Frekvencie</th><th>Max. rýchlosť</th><th>Rok</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>802.11b</strong></td><td>WiFi 1</td><td>2,4 GHz</td><td>11 Mbps</td><td>1999</td></tr>
+            <tr><td><strong>802.11a</strong></td><td>WiFi 2</td><td>5 GHz</td><td>54 Mbps</td><td>1999</td></tr>
+            <tr><td><strong>802.11g</strong></td><td>WiFi 3</td><td>2,4 GHz</td><td>54 Mbps</td><td>2003</td></tr>
+            <tr><td><strong>802.11n</strong></td><td>WiFi 4</td><td>2,4 / 5 GHz</td><td>600 Mbps</td><td>2009</td></tr>
+            <tr><td><strong>802.11ac</strong></td><td>WiFi 5</td><td>5 GHz</td><td>3,5 Gbps</td><td>2013</td></tr>
+            <tr><td><strong>802.11ax</strong></td><td>WiFi 6</td><td>2,4 / 5 / 6 GHz</td><td>9,6 Gbps</td><td>2019</td></tr>
+            <tr><td><strong>802.11be</strong></td><td>WiFi 7</td><td>2,4 / 5 / 6 GHz</td><td>46 Gbps</td><td>2024</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card" style="margin-top:14px;">
+        <h4>Kľúčové technológie štandardov</h4>
+        <p><strong>MIMO</strong> (Multiple Input Multiple Output) – viacero antén pre súčasný prenos viacerých dátových tokov, zvyšuje rýchlosť. <strong>OFDM</strong> – modulácia rozdeľujúca kanál na viac subkanálov pre odolnosť voči rušeniu. <strong>MU-MIMO</strong> (WiFi 5/6) – obsluha viacerých zariadení súčasne.</p>
+      </div>
+    </div>
+
+    <!-- 2b -->
+    <div class="uloha-block" id="t9-2b">
+      <div class="uloha-label">📌 2b</div>
+      <h3>Zabezpečenie bezdrôtových sietí</h3>
+      <div class="sustava-grid">
+        <div class="sustava-card">
+          <span class="s-badge s-hex">Zastaraný – nepoužívať</span>
+          <h4>WEP (Wired Equivalent Privacy)</h4>
+          <p>Prvý štandard zabezpečenia WiFi z roku 1997. Používa 64 alebo 128-bitové šifrovanie RC4. Dnes považovaný za <strong>úplne nezabezpečený</strong> – prelomiteľný za niekoľko minút. Nepoužívať!</p>
+        </div>
+        <div class="sustava-card">
+          <span class="s-badge s-dec">Starší – slabší</span>
+          <h4>WPA (WiFi Protected Access)</h4>
+          <p>Náhrada za WEP z roku 2003. Používa TKIP šifrovanie. Lepší ako WEP, ale stále má slabiny. Dnes sa neodporúča používať tam kde je dostupný WPA2.</p>
+        </div>
+        <div class="sustava-card">
+          <span class="s-badge s-bin">Štandard – odporúčaný</span>
+          <h4>WPA2 (IEEE 802.11i)</h4>
+          <p>Štandard od roku 2004. Používa silné <strong>AES šifrovanie</strong>. Dnes najbežnejšie používaný štandard zabezpečenia WiFi. Dostupný v režime Personal (heslo) a Enterprise (RADIUS server).</p>
+        </div>
+        <div class="sustava-card">
+          <span class="s-badge s-bin">Najnovší – najlepší</span>
+          <h4>WPA3</h4>
+          <p>Najnovší štandard od roku 2018. Silnejšie šifrovanie (SAE namiesto PSK), ochrana aj pri slabých heslách, individuálne šifrovanie každého spojenia. Odporúčaný pre nové siete.</p>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px;">
+        <h4>Ďalšie metódy zabezpečenia</h4>
+        <p><strong>Skrytie SSID</strong> – AP nevysiela názov siete (slabá ochrana – dá sa odhaliť). <strong>Filtrovanie MAC adries</strong> – povolenie prístupu len pre konkrétne MAC adresy (dá sa obísť spoofingom). <strong>RADIUS server</strong> – centrálna autentifikácia pre podnikové siete (WPA2/WPA3 Enterprise).</p>
+      </div>
+    </div>
+
+    <!-- 2c -->
+    <div class="uloha-block" id="t9-2c">
+      <div class="uloha-label">📌 2c</div>
+      <h3>Bezpečnostné riziká bezdrôtových sietí</h3>
+      <div class="components-grid">
+        <div class="comp-card"><div class="comp-icon icon-passive">👂</div><div><div class="name">Odpočúvanie (Eavesdropping)</div><div class="desc">Útočník zachytáva nešifrovanú komunikáciu v dosahu WiFi signálu – preto je šifrovanie nevyhnutné</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-passive">👥</div><div><div class="name">Man-in-the-Middle (MitM)</div><div class="desc">Útočník sa vloží medzi klienta a AP, zachytáva a prípadne modifikuje komunikáciu</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-passive">📶</div><div><div class="name">Falošný AP (Evil Twin)</div><div class="desc">Útočník vytvorí AP s rovnakým SSID ako legitímna sieť – zariadenia sa pripoja na falošný AP</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-passive">🔓</div><div><div class="name">Prelomenie hesla</div><div class="desc">Útok hrubou silou alebo slovníkový útok na WiFi heslo – dôležité je používať silné heslá</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-passive">🚫</div><div><div class="name">DoS útok</div><div class="desc">Zahltenie AP požiadavkami alebo rušenie frekvencie – výsledkom je nedostupnosť siete</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-passive">📱</div><div><div class="name">Neautorizovaný prístup</div><div class="desc">Pripojenie neoprávneného zariadenia k sieti – využitie kapacity a prístupu k interným zdrojom</div></div></div>
+      </div>
+    </div>
+
+    <!-- 3a -->
+    <div class="uloha-block" id="t9-3a">
+      <div class="uloha-label">📌 3a</div>
+      <h3>Prístupová metóda CSMA/CA</h3>
+      <div class="definition-box">
+        <strong>CSMA/CA</strong> (Carrier Sense Multiple Access with Collision Avoidance) je prístupová metóda používaná v bezdrôtových sieťach (WiFi). Na rozdiel od CSMA/CD (Ethernet) sa snaží <em>kolíziám predchádzať</em>, nie ich detekovať.
+      </div>
+      <div class="card">
+        <h4>Princíp fungovania CSMA/CA</h4>
+        <p><strong>1. Počúvanie kanála</strong> – pred odoslaním zariadenie počúva, či je kanál voľný (Carrier Sense).</p>
+        <p><strong>2. Čakanie</strong> – ak je kanál obsadený, zariadenie čaká. Ak je voľný, čaká ešte náhodný čas (backoff timer) pre zníženie pravdepodobnosti kolízie.</p>
+        <p><strong>3. Odoslanie</strong> – po uplynutí čakacej doby zariadenie odošle dáta.</p>
+        <p><strong>4. Potvrdenie (ACK)</strong> – príjemca odošle potvrdenie prijatia (ACK). Ak ACK nepríde, odosielateľ predpokladá kolíziu a opakuje odoslanie.</p>
+      </div>
+      <div class="two-col">
+        <div class="card" style="margin-bottom:0;">
+          <h4>🔄 Prečo nie CSMA/CD?</h4>
+          <p>V bezdrôtových sieťach nie je možné súčasne vysielať a počúvať (half-duplex rádiový kanál) – preto sa kolízie nedajú spoľahlivo detekovať. CSMA/CA im preto predchádza.</p>
+        </div>
+        <div class="card" style="margin-bottom:0;">
+          <h4>📋 RTS/CTS mechanizmus</h4>
+          <p>Rozšírenie CSMA/CA pre skryté stanice – zariadenie najprv pošle <strong>RTS</strong> (Request to Send), AP odpovie <strong>CTS</strong> (Clear to Send) a ostatné zariadenia vedia, že kanál je obsadený.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3b -->
+    <div class="uloha-block" id="t9-3b">
+      <div class="uloha-label">📌 3b</div>
+      <h3>Topológie bezdrôtových sietí: Klient-AP a Ad Hoc</h3>
+      <div class="two-col">
+        <div class="card" style="margin-bottom:0;">
+          <h4>🔌 Topológia Klient – AP (Infrastructure)</h4>
+          <p>Najbežnejší typ bezdrôtovej siete. Všetky zariadenia (klienti) komunikujú <strong>cez centrálny prístupový bod (AP)</strong>. AP je pripojený do káblovej siete a internetu.</p>
+          <p><strong>Výhody:</strong> Jednoduchá správa, väčší dosah, AP môže riadiť prístup, vhodné pre domácnosti aj firmy.</p>
+          <p><strong>Nevýhody:</strong> Závislosť od AP – ak AP vypadne, celá bezdrôtová sieť prestane fungovať. Vyšší ping (každý paket ide cez AP).</p>
+          <p><strong>Použitie:</strong> Domáce WiFi, firemné WLAN, verejné hotspoty.</p>
+        </div>
+        <div class="card" style="margin-bottom:0;">
+          <h4>🔗 Topológia Ad Hoc (IBSS)</h4>
+          <p>Zariadenia komunikujú <strong>priamo medzi sebou</strong> bez centrálneho AP. Každé zariadenie je zároveň klientom aj (čiastočne) prístupovým bodom.</p>
+          <p><strong>Výhody:</strong> Nevyžaduje AP ani infraštruktúru, rýchle nasadenie, vhodné pre dočasné siete.</p>
+          <p><strong>Nevýhody:</strong> Obmedzený dosah (iba priama viditeľnosť), horšia bezpečnosť, ťažšia správa pri väčšom počte zariadení, nižší výkon.</p>
+          <p><strong>Použitie:</strong> Dočasné siete (napr. prepojenie dvoch notebookov), gaming bez routera, núdzové siete.</p>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px;">
+        <h4>Porovnanie v skratke</h4>
+        <p>Topológia <strong>Klient–AP</strong> je štandard pre väčšinu sietí – spoľahlivá, bezpečná a škálovateľná. <strong>Ad Hoc</strong> sa používa výnimočne pre rýchle dočasné prepojenie zariadení bez dostupnej infraštruktúry. Moderné zariadenia podporujú obidva režimy.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===================== TÉMA 10 ===================== -->
+  <div class="tema-block" id="tema10">
+    <div class="tema-header">
+      <div class="tema-number">10</div>
+      <div class="tema-header-text">
+        <h2>Napájanie, Ohmov zákon & Zdroje</h2>
+        <p>Ohmov zákon, meranie, správa napájania, UPS, AT a ATX zdroje</p>
+      </div>
+    </div>
+
+    <!-- 1a -->
+    <div class="uloha-block" id="t10-1a">
+      <div class="uloha-label">📌 1a</div>
+      <h3>Ohmov zákon pre uzavretý elektrický obvod</h3>
+      <div class="definition-box">
+        <strong>Ohmov zákon</strong> vyjadruje vzťah medzi elektrickým napätím (U), prúdom (I) a odporom (R) v elektrickom obvode. Pre uzavretý obvod platí, že elektrický prúd je priamo úmerný napätiu a nepriamo úmerný odporu.
+      </div>
+      <div class="two-col">
+        <div class="card" style="margin-bottom:0;">
+          <h4>📐 Vzťah – Ohmov zákon</h4>
+          <div style="font-family:monospace; font-size:1.1rem; background:#eff6ff; border:1px solid #bfdbfe; border-radius:8px; padding:16px; text-align:center; line-height:2.2;">
+            <strong>U = R × I</strong><br>
+            <span style="font-size:0.85rem; color:#6b7280;">I = U / R &nbsp;&nbsp;|&nbsp;&nbsp; R = U / I</span>
+          </div>
+          <p style="margin-top:12px;"><strong>U</strong> – elektrické napätie [V – volt]<br>
+          <strong>I</strong> – elektrický prúd [A – ampér]<br>
+          <strong>R</strong> – elektrický odpor [Ω – ohm]</p>
+        </div>
+        <div class="card" style="margin-bottom:0;">
+          <h4>🔋 Ohmov zákon pre uzavretý obvod</h4>
+          <p>V uzavretom obvode so zdrojom napätia (EMF) a vnútorným odporom zdroja (r) platí:</p>
+          <div style="font-family:monospace; font-size:1rem; background:#eff6ff; border:1px solid #bfdbfe; border-radius:8px; padding:14px; text-align:center; line-height:2.2;">
+            <strong>I = U / (R + r)</strong><br>
+            <span style="font-size:0.85rem; color:#6b7280;">U = elektromotorická sila (EMF)<br>r = vnútorný odpor zdroja</span>
+          </div>
+          <p style="margin-top:10px;">Čím väčší je vnútorný odpor zdroja, tým menší prúd tečie obvodom. Pri skrate (R=0) tečie maximálny prúd I = U/r.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1b -->
+    <div class="uloha-block" id="t10-1b">
+      <div class="uloha-label">📌 1b</div>
+      <h3>Meranie elektrického prúdu a napätia</h3>
+      <div class="two-col">
+        <div class="card" style="margin-bottom:0;">
+          <h4>⚡ Meranie prúdu – Ampérmeter</h4>
+          <p>Ampérmeter sa zapája <strong>do série</strong> (za sebou) so spotrebičom. Musí mať čo najmenší vnútorný odpor, aby neovplyvnil meraný obvod.</p>
+          <div style="font-family:monospace; font-size:0.85rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:10px; margin-top:8px; text-align:center; line-height:2;">
+            [+Zdroj-] → [A] → [Spotrebič] → [−Zdroj]<br>
+            <span style="color:#6b7280;">Ampérmeter v sérii so spotrebičom</span>
+          </div>
+        </div>
+        <div class="card" style="margin-bottom:0;">
+          <h4>🔋 Meranie napätia – Voltmeter</h4>
+          <p>Voltmeter sa zapája <strong>paralelne</strong> (vedľa) so spotrebičom. Musí mať čo najväčší vnútorný odpor, aby odvádzal čo najmenej prúdu.</p>
+          <div style="font-family:monospace; font-size:0.85rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:10px; margin-top:8px; text-align:center; line-height:2;">
+            [+Zdroj-] → [Spotrebič] → [−Zdroj]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↕ [V] ↕<br>
+            <span style="color:#6b7280;">Voltmeter paralelne so spotrebičom</span>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px;">
+        <h4>🔧 Multimeter</h4>
+        <p>V praxi sa používa <strong>multimeter</strong> – kombinovaný prístroj, ktorý dokáže merať napätie, prúd aj odpor. Digitálny multimeter (DMM) zobrazuje hodnoty na displeji a je najčastejšie používaným meracím prístrojom v elektronike.</p>
+      </div>
+    </div>
+
+    <!-- 1c -->
+    <div class="uloha-block" id="t10-1c">
+      <div class="uloha-label">📌 1c</div>
+      <h3>Chyby pri meraní</h3>
+      <div class="sustava-grid">
+        <div class="sustava-card">
+          <span class="s-badge s-bin">Typ chyby</span>
+          <h4>Systematická chyba</h4>
+          <p>Opakovateľná chyba spôsobená nedokonalosťou meracieho prístroja alebo metódy. Vždy pôsobí rovnakým smerom (napr. prístroj meria vždy o 0,5 V viac). Dá sa korigovať kalibráciou.</p>
+        </div>
+        <div class="sustava-card">
+          <span class="s-badge s-dec">Typ chyby</span>
+          <h4>Náhodná chyba</h4>
+          <p>Nepredvídateľná chyba vznikajúca vplyvom rušenia, nestability meranej veličiny alebo okolia. Hodnoty sa náhodne menia okolo skutočnej hodnoty. Znižuje sa opakovaným meraním a štatistickým spracovaním.</p>
+        </div>
+        <div class="sustava-card">
+          <span class="s-badge s-hex">Typ chyby</span>
+          <h4>Hrubá chyba (omyl)</h4>
+          <p>Chyba spôsobená nesprávnym odčítaním, chybným zapojením alebo nesprávnym rozsahom prístroja. Výsledok sa výrazne odlišuje od skutočnej hodnoty. Treba opakovať meranie.</p>
+        </div>
+        <div class="sustava-card">
+          <span class="s-badge s-bin">Typ chyby</span>
+          <h4>Metodická chyba</h4>
+          <p>Chyba spôsobená nesprávnou metódou merania – napr. voltmeter má konečný odpor a odčerpáva prúd, čo ovplyvní meranie napätia. Ampérmeter má nenulový odpor, ktorý ovplyvní meranie prúdu.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2a -->
+    <div class="uloha-block" id="t10-2a">
+      <div class="uloha-label">📌 2a</div>
+      <h3>Správa napájania</h3>
+      <div class="definition-box">
+        <strong>Správa napájania</strong> (Power Management) je súbor technológií a nastavení, ktoré riadia spotrebu elektrickej energie počítača a jeho komponentov s cieľom znížiť spotrebu energie a predĺžiť výdrž batérie.
+      </div>
+      <div class="components-grid">
+        <div class="comp-card"><div class="comp-icon icon-active">😴</div><div><div class="name">Sleep (spánok)</div><div class="desc">Počítač znižuje spotrebu, RAM zostáva napájená – rýchle prebudenie, strata dát pri výpadku prúdu</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">💤</div><div><div class="name">Hibernate (hibernácia)</div><div class="desc">Obsah RAM sa uloží na disk, PC sa vypne – žiadna spotreba, pomalšie prebudenie, bezpečné</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">⚡</div><div><div class="name">ACPI</div><div class="desc">Advanced Configuration and Power Interface – štandard pre správu napájania v OS (Windows, Linux)</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">🖥️</div><div><div class="name">Vypnutie monitora</div><div class="desc">Po určitom čase nečinnosti sa monitor prepne do úsporného režimu – výrazná úspora energie</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">⚙️</div><div><div class="name">CPU throttling</div><div class="desc">Zníženie taktovacej frekvencie procesora pri nižšej záťaži – znižuje spotrebu a teplo</div></div></div>
+        <div class="comp-card"><div class="comp-icon icon-active">🔋</div><div><div class="name">Správa batérie</div><div class="desc">Sledovanie stavu batérie, optimalizácia nabíjania a výdrže pri notebookoch a UPS</div></div></div>
+      </div>
+    </div>
+
+    <!-- 2b -->
+    <div class="uloha-block" id="t10-2b">
+      <div class="uloha-label">📌 2b</div>
+      <h3>Blokové zapojenie lineárneho napájacieho zdroja</h3>
+      <div class="definition-box">
+        Lineárny napájací zdroj premieňa striedavé napätie zo siete (230V AC) na jednosmerné napätie (DC) potrebné pre elektronické zariadenia. Skladá sa zo štyroch základných blokov.
+      </div>
+      <div class="ip-table-wrap">
+        <table class="ip">
+          <thead>
+            <tr><th>Blok</th><th>Funkcia</th><th>Priebeh napätia</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Transformátor</strong></td>
+              <td>Mení amplitúdu striedavého napätia (230V → napr. 12V AC). Využíva elektromagnetickú indukciu.</td>
+              <td>Striedavé napätie ~ (sínusový priebeh, znížená amplitúda)</td>
+            </tr>
+            <tr>
+              <td><strong>2. Usmerňovač</strong></td>
+              <td>Premieňa striedavé napätie na jednosmerné. Používa diódy (jednopólový alebo mostíkový usmerňovač – Graetzov mostík).</td>
+              <td>Jednosmerné pulzujúce napätie (len kladné pulzy)</td>
+            </tr>
+            <tr>
+              <td><strong>3. Filter (vyhladzovač)</strong></td>
+              <td>Vyhladzuje pulzujúce napätie pomocou kondenzátorov. Znižuje zvlnenie napätia (ripple).</td>
+              <td>Jednosmerné napätie s malým zvlnením</td>
+            </tr>
+            <tr>
+              <td><strong>4. Stabilizátor</strong></td>
+              <td>Udržiava konštantné výstupné napätie aj pri zmene záťaže alebo vstupného napätia. Používa Zenerove diódy alebo integrované obvody (napr. LM7805).</td>
+              <td>Konštantné jednosmerné napätie (napr. presne 5V DC)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card" style="margin-top:14px;">
+        <h4>Schéma blokov</h4>
+        <div style="font-family:monospace; font-size:0.88rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:14px; text-align:center; line-height:2.5;">
+          230V AC → [Transformátor] → [Usmerňovač] → [Filter] → [Stabilizátor] → DC výstup<br>
+          <span style="color:#6b7280; font-size:0.8rem;">~230V &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ~12V AC &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pulzujúce DC &nbsp;&nbsp;&nbsp;&nbsp; ~DC &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; konštantné DC</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2c -->
+    <div class="uloha-block" id="t10-2c">
+      <div class="uloha-label">📌 2c</div>
+      <h3>Záložné zdroje UPS</h3>
+      <div class="definition-box">
+        <strong>UPS</strong> (Uninterruptible Power Supply – neprerušiteľný zdroj napájania) je zariadenie, ktoré pri výpadku elektrickej siete okamžite prevezme napájanie počítača z internej batérie, čím umožní bezpečné uloženie dát a vypnutie systému.
+      </div>
+      <div class="sustava-grid">
+        <div class="sustava-card">
+          <span class="s-badge s-hex">Základný typ</span>
+          <h4>Off-line UPS (Stand-by)</h4>
+          <p>Počítač je napájaný priamo zo siete. Pri výpadku sa prepne na batériu (prepínací čas ~5–20 ms). Lacnejší, ale krátky prepínací čas môže byť problém pre citlivé zariadenia.</p>
+        </div>
+        <div class="sustava-card">
+          <span class="s-badge s-bin">Stredný typ</span>
+          <h4>Line-interactive UPS</h4>
+          <p>Obsahuje regulátor napätia (AVR), ktorý koriguje výkyvy napätia bez prechodu na batériu. Prepínací čas ~2–4 ms. Dobrý kompromis cena/výkon pre väčšinu PC.</p>
+        </div>
+        <div class="sustava-card">
+          <span class="s-badge s-dec">Profesionálny typ</span>
+          <h4>On-line UPS (Double conversion)</h4>
+          <p>Počítač je vždy napájaný cez batériu a menič. Nulový prepínací čas, dokonalá ochrana pred všetkými sieťovými poruchami. Najdrahší, určený pre servery a kritické systémy.</p>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px;">
+        <h4>Význam UPS</h4>
+        <p>UPS chráni pred: <strong>výpadkom napájania</strong> (blackout), <strong>poklesom napätia</strong> (brownout), <strong>prepätím</strong> (spike/surge) a <strong>rušením</strong> (noise). Zabraňuje strate dát, poškodeniu hardware a neočakávanému vypnutiu systémov.</p>
+      </div>
+    </div>
+
+    <!-- 3a -->
+    <div class="uloha-block" id="t10-3a">
+      <div class="uloha-label">📌 3a</div>
+      <h3>Príklady zdrojov jednosmerného a striedavého prúdu</h3>
+      <div class="two-col">
+        <div class="card" style="margin-bottom:0;">
+          <h4>⚡ Jednosmerný prúd (DC)</h4>
+          <p>Elektrický prúd tečie stále v jednom smere. Napätie je konštantné.</p>
+          <p><strong>Príklady zdrojov DC:</strong></p>
+          <p>• <strong>Batérie</strong> (AA, AAA, Li-ion) – chemická energia → elektrická</p>
+          <p>• <strong>Akumulátory</strong> – nabíjateľné batérie (autobatéria, UPS)</p>
+          <p>• <strong>Solárne články</strong> – svetelná energia → elektrická (fotovoltaika)</p>
+          <p>• <strong>Napájacie adaptéry</strong> – sieťový adaptér notebooku, nabíjačky</p>
+          <p>• <strong>Palivové články</strong> – chemická reakcia vodíka a kyslíka</p>
+        </div>
+        <div class="card" style="margin-bottom:0;">
+          <h4>〜 Striedavý prúd (AC)</h4>
+          <p>Elektrický prúd pravidelne mení smer. Napätie sa mení sínusovo.</p>
+          <p><strong>Príklady zdrojov AC:</strong></p>
+          <p>• <strong>Elektrická sieť</strong> – rozvodná sieť 230V/50Hz (SR)</p>
+          <p>• <strong>Generátory</strong> – mechanická energia → elektrická (elektráreň)</p>
+          <p>• <strong>Alternátory</strong> – v automobiloch nabíjajú batériu cez usmerňovač</p>
+          <p>• <strong>Dynamo</strong> – na bicykli, generuje AC pri otáčaní kolesa</p>
+          <p>• <strong>UPS (výstup)</strong> – invertuje DC z batérie späť na AC pre spotrebiče</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3b -->
+    <div class="uloha-block" id="t10-3b">
+      <div class="uloha-label">📌 3b</div>
+      <h3>Napájacie zdroje AT a ATX – popis a porovnanie</h3>
+      <div class="two-col">
+        <div class="card" style="margin-bottom:0;">
+          <h4>🖥️ Zdroj AT (Advanced Technology)</h4>
+          <p>Starší štandard napájacích zdrojov používaný v počítačoch do konca 90. rokov.</p>
+          <p><strong>Charakteristiky:</strong> Fyzické vypnutie tlačidlom (prerušenie 230V), dva napájacie konektory P8 a P9 pre základnú dosku (12 pinov celkom), výstupné napätia +5V, +12V, -5V, -12V.</p>
+          <p><strong>Nevýhoda:</strong> Nemožnosť softvérového vypnutia – OS nemohol vypnúť počítač automaticky. Vyššia spotreba v pohotovostnom režime.</p>
+        </div>
+        <div class="card" style="margin-bottom:0;">
+          <h4>⚡ Zdroj ATX (Advanced Technology eXtended)</h4>
+          <p>Moderný štandard od roku 1995, dnes štandard pre všetky PC. Umožňuje softvérové vypnutie cez signál PS_ON.</p>
+          <p><strong>Charakteristiky:</strong> Jeden 24-pinový konektor pre základnú dosku (pôvodne 20-pin), +3,3V výstup navyše oproti AT, pohotovostné napätie 5VSB (standby), podpora Wake-on-LAN, softvérové vypnutie cez OS.</p>
+          <p><strong>Výhoda:</strong> OS (Windows, Linux) môže počítač sám vypnúť. Lepšia efektivita, moderné konektory (PCIe, SATA).</p>
+        </div>
+      </div>
+      <div class="ip-table-wrap" style="margin-top:14px;">
+        <table class="ip">
+          <thead>
+            <tr><th>Parameter</th><th>AT zdroj</th><th>ATX zdroj</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Vypnutie</strong></td><td>Fyzické (tlačidlo 230V)</td><td>Softvérové (PS_ON signál)</td></tr>
+            <tr><td><strong>Konektor MB</strong></td><td>2× 6-pin (P8+P9)</td><td>1× 24-pin (alebo 20-pin)</td></tr>
+            <tr><td><strong>Napätia</strong></td><td>+5V, +12V, -5V, -12V</td><td>+3,3V, +5V, +12V, -12V, 5VSB</td></tr>
+            <tr><td><strong>Standby napätie</strong></td><td>Nie</td><td>Áno (5VSB – vždy aktívne)</td></tr>
+            <tr><td><strong>Softvérové vypnutie</strong></td><td>Nie</td><td>Áno</td></tr>
+            <tr><td><strong>Použitie dnes</strong></td><td>Zastaraný</td><td>Štandard</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
 
 </main>
 
 <footer>
-  Maturitné témy &nbsp;·&nbsp; Timothy Horoba
+  Maturitné témy &nbsp;·&nbsp; Timothy Horoba 
 </footer>
 
 </body>
