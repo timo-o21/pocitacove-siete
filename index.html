@@ -71,41 +71,91 @@
   .tema-nav {
     background: white;
     border-bottom: 1px solid var(--border);
-    padding: 0;
-    display: flex;
-    overflow-x: auto;
-    justify-content: center;
+    padding: 10px 24px;
     position: sticky;
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   }
-  .tema-nav a {
+  .tema-nav-inner {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 14px 22px;
-    text-decoration: none;
-    color: var(--muted);
-    font-size: 14px;
-    font-weight: 500;
-    border-bottom: 3px solid transparent;
-    white-space: nowrap;
-    transition: all 0.2s;
+    justify-content: center;
+    gap: 12px;
+    max-width: 880px;
+    margin: 0 auto;
   }
-  .tema-nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
-  .tema-nav a .num {
+  .nav-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid var(--border);
+    background: var(--bg);
+    color: var(--accent);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.18s;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .nav-arrow:hover {
+    background: var(--blue-bg);
+    border-color: var(--accent);
+  }
+  .nav-arrow.disabled {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+  }
+  .nav-center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    max-width: 400px;
+    justify-content: center;
+  }
+  .nav-badge {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 22px;
-    height: 22px;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1a6efc, #38bdf8);
+    color: white;
+    font-family: 'Syne', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+  .nav-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f172a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .nav-dots {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-top: 2px;
+  }
+  .nav-dot {
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
-    background: var(--blue-bg);
-    color: var(--accent);
-    font-size: 11px;
-    font-weight: 700;
-    border: 1px solid #bfdbfe;
+    background: var(--border);
+    transition: background 0.2s;
+    cursor: pointer;
+  }
+  .nav-dot.active {
+    background: var(--accent);
   }
 
   main {
@@ -335,26 +385,26 @@
 <body>
 
 <header>
-  <div class="badge">💻 Školský projekt</div>
-  <h1>Programové vybavenie počítačov</h1>
-  <p>Prehľad tém – siete, komponenty, číselné sústavy, IP adresy a ďalšie</p>
+  <div class="badge">Timothy Horoba</div>
+  <h1>Maturitné témy</h1>
+  <p>Prehľad maturitných tém</p>
 </header>
 
 <!-- Navigácia tém -->
 <nav class="tema-nav">
-  <a href="#tema1"><span class="num">1</span> Počítačové siete</a>
-  <a href="#tema2"><span class="num">2</span> Číselné sústavy & IP</a>
-  <a href="#tema3"><span class="num">3</span> Kabeláž & Porovnanie</a>
-  <a href="#tema4"><span class="num">4</span> Internet & Bezpečnosť</a>
-  <a href="#tema5"><span class="num">5</span> Grafika & Obraz</a>
-  <a href="#tema6"><span class="num">6</span> Booleova algebra & Hradlá</a>
-  <a href="#tema7"><span class="num">7</span> Smerovanie</a>
-  <a href="#tema8"><span class="num">8</span> Matičná doska & Procesor</a>
-  <a href="#tema9"><span class="num">9</span> Bezdrôtové siete</a>
-  <a href="#tema10"><span class="num">10</span> Napájanie & Ohmov zákon</a>
-  <a href="#tema11"><span class="num">11</span> Pamäte počítača</a>
-  <a href="#tema12"><span class="num">12</span> Pevné disky & RAID</a>
-  <a href="#tema13"><span class="num">13</span> Elektrické siete & BOZP</a>
+  <div class="tema-nav-inner">
+    <div class="nav-arrow disabled" id="nav-prev" onclick="navGo(-1)">&#8592;</div>
+    <div class="nav-center">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="nav-badge" id="nav-num">1</span>
+          <span class="nav-label" id="nav-text">Počítačové siete & Kabeláž</span>
+        </div>
+        <div class="nav-dots" id="nav-dots"></div>
+      </div>
+    </div>
+    <div class="nav-arrow" id="nav-next" onclick="navGo(1)">&#8594;</div>
+  </div>
 </nav>
 
 <main>
@@ -3439,5 +3489,59 @@
 Maturitné Témy &nbsp;·&nbsp; Timothy Horoba
 </footer>
 
+
+<script>
+  const temy = [
+    "Počítačové siete & Kabeláž",
+    "Číselné sústavy & IP adresy",
+    "Kabeláž – kontrola & porovnanie",
+    "Internet, komunikácia & Bezpečnosť",
+    "Grafika, obraz & Farebné modely",
+    "Booleova algebra & Logické obvody",
+    "Smerovanie v počítačových sieťach",
+    "Matičná doska, procesor & Zbernice",
+    "Bezdrôtové siete WLAN",
+    "Napájanie, Ohmov zákon & Zdroje",
+    "Pamäte počítača",
+    "Pevné disky, optické médiá & RAID",
+    "Elektrické siete, napätie & BOZP"
+  ];
+  let current = 0;
+
+  function updateNav() {
+    document.getElementById('nav-num').textContent = current + 1;
+    document.getElementById('nav-text').textContent = temy[current];
+    document.getElementById('nav-prev').classList.toggle('disabled', current === 0);
+    document.getElementById('nav-next').classList.toggle('disabled', current === temy.length - 1);
+    document.querySelectorAll('.nav-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  function navGo(dir) {
+    current = Math.max(0, Math.min(temy.length - 1, current + dir));
+    updateNav();
+    document.getElementById('tema' + (current + 1)).scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  const dotsEl = document.getElementById('nav-dots');
+  temy.forEach((_, i) => {
+    const d = document.createElement('div');
+    d.className = 'nav-dot' + (i === 0 ? ' active' : '');
+    d.onclick = () => { current = i; updateNav(); document.getElementById('tema' + (i+1)).scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+    dotsEl.appendChild(d);
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const idx = parseInt(e.target.id.replace('tema', '')) - 1;
+        if (!isNaN(idx)) { current = idx; updateNav(); }
+      }
+    });
+  }, { threshold: 0.3 });
+
+  document.querySelectorAll('.tema-block').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
